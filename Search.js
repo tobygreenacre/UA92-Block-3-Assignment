@@ -31,29 +31,29 @@ document.addEventListener("DOMContentLoaded", function () {
     const searchInput = document.getElementById("searchInput");
     const suggestionsList = document.getElementById("suggestions");
 
-    // Function to show suggestions as the user types
+    // Function to show suggestions as the user types in the search box
     document.showSuggestions = showSuggestions
     
     function showSuggestions(){
-        const typed = searchInput.value.toLowerCase();
+        const typed = searchInput.value.toLowerCase(); //take the input that is typed as a variable
         suggestionsList.innerHTML = ""; // Clear previous suggestions
 
         if (typed.length === 0){
-            return;
+            return; //end function if they havent typed anything
         }
 
         const matches = []
         for(let i = 0; i < productPages.length; i++){
             if(productPages[i].name.toLowerCase().includes(typed)){
-                matches.push(productPages[i])
+                matches.push(productPages[i]) //go through each product and if the name includes what is typed then add it to the matches array
             }
         }
 
 
-        if (matches.length > 0) {
+        if (matches.length > 0) { //if there are any matches
             let suggestionsInnerHTML = "";
             for(let x = 0; x < matches.length; x++){
-                suggestionsInnerHTML += '<li><a href="'+matches[x].url+'">'+matches[x].name+'</a></li>'
+                suggestionsInnerHTML += '<li><a href="'+matches[x].url+'">'+matches[x].name+'</a></li>' //go through each match and add it to the sugggestions list
             }
             suggestionsList.innerHTML = suggestionsInnerHTML
             suggestionsList.style.display = "block";
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.addEventListener("click", function (event) {
         if (!searchInput.contains(event.target) && !suggestionsList.contains(event.target)) {
-            suggestionsList.style.display = "none";
+            suggestionsList.style.display = "none"; //event listener that hides the suggestions list if user clicks anywhere that isnt on the list itself
         }
     });
 });

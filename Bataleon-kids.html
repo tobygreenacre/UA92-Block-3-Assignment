@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,18 +9,17 @@
         <script src="Search.js"></script>
         <script src="ItemsJavaScript.js"></script>
     </head>
-
-    <header>
-        <div class="even-container"></div>
-        <a href="index.html"><img class="logo" width="120px" src="images/Logo.png" alt="logo"></a>
-        <form onsubmit="return false;">
-            <div class="search-container">
-                <input class="Search" type="text" id="searchInput" placeholder="Search..." onkeyup="showSuggestions()"/>
-                <ul id="suggestions" class="suggestions-list"></ul>
-            </div>
-        </form>
-    </header>
     <body>
+        <header>
+            <div class="even-container"></div>
+            <a href="index.html"><img class="logo" width="120px" src="images/Logo.png" alt="logo"></a>
+            <form onsubmit="return false;">
+                <div class="search-container">
+                    <input class="Search" type="text" id="searchInput" placeholder="Search..." onkeyup="showSuggestions()">
+                    <ul id="suggestions" class="suggestions-list"></ul>
+                </div>
+            </form>
+        </header>
         <nav class="navbar navbar-expand-lg custom-nav">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -37,48 +36,48 @@
                 </div>
             </div>
         </nav>
-        <button class="back-button"><a href="kids.html">back</a></button>
+        <button class="back-button"><a href="kids.html">back</a></button> <!--back button with link back to kids section-->
         <div class="product-page">
-            <img class="product-page-img" src="images/kids/Bataleon-Kids.png" alt="Bataleon Minishred">
+            <img class="product-page-img" src="images/kids/Bataleon-Kids.png" alt="Bataleon Minishred"> <!--image of product-->
             <div class="right-side">
                 <center>
-                    <h1 class="product-page-title">Bataleon Minishred</h1>
-                    <h3 class="price">£249.95</h3>
+                    <h1 class="product-page-title">Bataleon Minishred</h1> <!--product name-->
+                    <h3 class="price">£249.95</h3> <!--product price and description below-->
                     <p class="description">The Bataleon Mini Shred is the perfect board to help young riders develop their skills and confidence on the mountain. With a soft flex, twin shape, and Bataleon's 3BT™ (Triple Base Technology), this board provides effortless turn initiation and a forgiving ride. The catch-free edges make it easier for kids to link turns without getting caught up. The playful grid-and-graffiti-inspired design with fun blue spray-painted smiley faces gives it a stylish and exciting look. Whether they're hitting the park or cruising the groomers, the Mini Shred is built to keep the stoke high</p>
-                    <button class="add-basket">Add To Basket</button>
+                    <button class="add-basket">Add To Basket</button> <!--add to basket button. JS used to add item to storage-->
                 </center>
             </div>
         </div>
+        <footer class="footer-container">
+            <ul class="footer">
+                <li>
+                    <ul class="footer-item">
+                        <li class="footer-heading">Socials</li>
+                        <li><a href = "https://www.instagram.com/poudreboardstore/?hl=en" target = "_blank">Instagram</a></li>
+                        <li><a href = "https://www.facebook.com/profile.php?id=61572590711214" target = "_blank">Facebook</a></li>
+                        <li><a href = "" target = "_blank">Youtube</a></li> 
+                    </ul>
+                </li>
+                <li>
+                    <ul class="footer-item">
+                        <li class="footer-heading">Help</li>
+                        <li><a href="Returns.html">Returns</a></li>
+                        <li><a href="Postage.html">Postage</a></li>
+                        <li><a href="FAQS.html">FAQS</a></li> 
+                    </ul>
+                </li>
+                <li>
+                    <ul class="footer-item">
+                        <li class="footer-heading">More</li>
+                        <li><a href="Story.html">Our Story</a></li>
+                        <li><a href="Privacy.html">Privacy</a></li>
+                        <li><a href="Terms.html">T&C's</a></li> 
+                    </ul>
+                </li>
+            </ul>
+            <div class="copyright">
+                © 2024 Poudre Boardstore. All rights reserved.
+            </div>
+        </footer>
     </body>
-    <footer class="footer-container">
-        <ul class="footer">
-            <li>
-                <ul class="footer-item">
-                    <li class="footer-heading">Socials</li>
-                    <li><a href = "https://www.instagram.com/poudreboardstore/?hl=en" target = "_blank">Instagram</a></li>
-                    <li><a href = "https://www.facebook.com/profile.php?id=61572590711214" target = "_blank">Facebook</a></li>
-                    <li><a href = "" target = "_blank">Youtube</a></li> 
-                </ul>
-            </li>
-            <li>
-                <ul class="footer-item">
-                    <li class="footer-heading">Help</li>
-                    <li><a href="Returns.html">Returns</a></li>
-                    <li><a href="Postage.html">Postage</a></li>
-                    <li><a href="FAQS.html">FAQS</a></li> 
-                </ul>
-            </li>
-            <li>
-                <ul class="footer-item">
-                    <li class="footer-heading">More</li>
-                    <li><a href="Story.html">Our Story</a></li>
-                    <li><a href="Privacy.html">Privacy</a></li>
-                    <li><a href="Terms.html">T&C's</a></li> 
-                </ul>
-            </li>
-        </ul>
-        <div class="copyright">
-            © 2024 Poudre Boardstore. All rights reserved.
-        </div>
-    </footer>
 </html>

@@ -175,6 +175,7 @@ form {
 .featured-heading{
     font-size: 70px;
     font-family: 'MyFont';
+    text-align: center;
 }
 .scroll-bar{
     overflow-x: auto;
@@ -481,6 +482,7 @@ hr{
     border-radius: 2px;
     background-color: #f0eae0;
     font-size: 20px;
+    color: black;
 }
 .back-button a{
     text-decoration: none;
@@ -514,9 +516,6 @@ hr{
     border-radius: 2px;
     background-color: #f0eae0;
     font-size: 20px;
-}
-.empty-basket a{
-    text-decoration: none;
     color: black;
 }
 .checkout-bar{
@@ -533,9 +532,6 @@ hr{
     border-radius: 2px;
     background-color: #f0eae0;
     font-size: 20px;
-}
-.check-out a{
-    text-decoration: none;
     color: black;
 }
 .total-cost{
@@ -546,6 +542,7 @@ hr{
     border-radius: 2px;
     background-color: #f0eae0;
     font-size: 17px;
+    color: black;
 }
 .information{
     padding-top: 15px;
